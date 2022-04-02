@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+	<AR-PACKAGES>
+
+		<AR-PACKAGE>
+			<SHORT-NAME>SWCs_Learn_In_Depth_Packages</SHORT-NAME>
+			<ELEMENTS>
+				<SENDER-RECEIVER-INTERFACE>
+					<SHORT-NAME>SRIF_LaiderData</SHORT-NAME>
+					<DATA-ELEMENTS>
+						<VARIABLE-DATA-PROTOTYPE>
+							<SHORT-NAME>Laider_ObjectDistance</SHORT-NAME>
+							<TYPE-TREF DEST="ABSTRACT-IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint16</TYPE-TREF>
+						</VARIABLE-DATA-PROTOTYPE>
+
+						<VARIABLE-DATA-PROTOTYPE>
+							<SHORT-NAME>Laider_Object_ID</SHORT-NAME>
+							<TYPE-TREF DEST="ABSTRACT-IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint16</TYPE-TREF>
+						</VARIABLE-DATA-PROTOTYPE>
+
+						<VARIABLE-DATA-PROTOTYPE>
+							<SHORT-NAME>Laider_ObjectAngle</SHORT-NAME>
+							<TYPE-TREF DEST="ABSTRACT-IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint16</TYPE-TREF>
+						</VARIABLE-DATA-PROTOTYPE>
+
+
+					</DATA-ELEMENTS>
+				</SENDER-RECEIVER-INTERFACE>
+
+				<SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+					<SHORT-NAME>Sensor_SWC_1</SHORT-NAME>
+					<PORTS>
+						<P-PORT-PROTOTYPE>
+							<SHORT-NAME>Pport_Laider_Data</SHORT-NAME>
+							<PROVIDED-INTERFACE-TREF
+								DEST="SENDER-RECEIVER-INTERFACE">/SWCs_Learn_In_Depth_Packages/SRIF_LaiderData</PROVIDED-INTERFACE-TREF>
+
+						</P-PORT-PROTOTYPE>
+
+
+					</PORTS>
+
+
+
+				</SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+
+
+				<APPLICATION-SW-COMPONENT-TYPE>
+					<SHORT-NAME>EABS_ALGO_SWC2</SHORT-NAME>
+					<PORTS>
+						<R-PORT-PROTOTYPE>
+							<SHORT-NAME>RPORT_Laider_Data</SHORT-NAME>
+							<REQUIRED-INTERFACE-TREF
+								DEST="SENDER-RECEIVER-INTERFACE">/SWCs_Learn_In_Depth_Packages/SRIF_LaiderData</REQUIRED-INTERFACE-TREF>
+						</R-PORT-PROTOTYPE>
+
+					</PORTS>
+
+				</APPLICATION-SW-COMPONENT-TYPE>
+
+
+			</ELEMENTS>
+		</AR-PACKAGE>
+
+	</AR-PACKAGES>
+
+
+
+</AUTOSAR>
