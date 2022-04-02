@@ -1,0 +1,6 @@
+#if 0 
+{
+  {0x01, 0x63, 0x00, 0x00}, //W.0.X.Y.Z.255 //1.0.99.0.0.255
+  (TCosem_stObjParam*)Cal_stObjParamProfile
+},
+#endif 

@@ -1,0 +1,3240 @@
+<Base>
+
+		<restrictions>
+		 <public value = "(Cal_Itf_mPublicObject)"/>
+		 <restricted value = "(Cal_Itf_mPublicObject | Cosem_mAssociationReadingClient)"/>
+		 <secret value = "(Cal_Itf_mPublicObject | Cosem_mAssociationReadingClient|Cosem_mAssociationManagementClient)"/>
+		 <update value = "Cosem_mAssociationUpdateClient"/>
+		</restrictions>
+		<groups>
+		 <no_group value = "Cal_Itf_mNbGroup0"/>
+		 <restrict_key_group value = "Cal_Itf_mNbOfRestrictKey" />
+		</groups>
+		<permissions>
+		 <read value = "Cal_Itf_mRAttribute"/>
+		 <write value = "Cal_Itf_mWAttribute"/>
+		 <read_write value = "Cal_Itf_mRWAttribute"/>
+		</permissions>
+		
+	
+	
+				  
+	   
+   
+     
+	   
+	
+<obis class="Data" name="Device_ID1">
+		 <describtion value ="
+		 
+		 Device_ID1 
+		 Meter Serial Number
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0000600100FF"/>
+		 <attr2 type = "octet-string" size="10"  permission = "read_write"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+		 
+
+
+<obis class="Data" name="Device_ID2">
+         <describtion value =
+		 
+		 "Device_ID2 Meter Model"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600101FF"/>
+         <attr2 type = "octet-string" size="6"  permission = "read_write"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+                       
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+
+<obis class="Data" name="Device_ID3">
+         <describtion value ="
+
+		 Device_ID3
+		 Firmware Version"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000000201FF"/>
+         <attr2 type = "octet-string" size="18"  permission = "read_write"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+                       
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+<obis class="Data" name="Device_ID4">
+         <describtion value ="
+
+		 Device_ID4
+		 Active Firmware Identifier"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000000200FF"/>
+         <attr2 type = "octet-string" size="20"  permission = "read_write"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+                       
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+<obis class="Data" name="Device_ID5">
+         <describtion value ="
+
+		 Device_ID5
+		 Manufacturing Identifier"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600103FF"/>
+         <attr2 type = "octet-string" size="13"  permission = "read_write"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+                       
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+ 
+<obis class="Data" name="Device_ID6">
+         <describtion value ="
+
+		 Device_ID6
+		 Broadcast Communications Identifier"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600106FF"/>
+         <attr2 type = "octet-string" size="24"  permission = "read_write"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+                       
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+ 
+<obis class="Data" name="Device_ID7">
+         <describtion value =
+		 
+		 "Device_ID7
+		 Previous Firmware Identifier"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600105FF"/>
+         <attr2 type = "octet-string" size="5"  permission = "read_write"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="Device_ID8">
+         <describtion value =
+		 
+		 "Device_ID8
+		 Customer Number"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600104FF"/>
+         <attr2 type = "octet-string" size="13"  	permission = "read_write"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="Device_ID9">
+         <describtion value ="
+
+		 Device_ID9"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600108FF"/>
+         <attr2 type = "octet-string" size="20"  permission = "read_write"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+                       
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="Device_ID10">
+         <describtion value ="
+
+		 Device_ID10"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600109FF"/>
+         <attr2 type = "octet-string" size="20"  permission = "read_write"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+                       
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+ <obis class="Data" name="POSTPAID_GRACE_PERIOD">
+         <describtion value ="
+
+		 POSTPAID_GRACE_PERIOD"
+		 
+		 />
+         <attr1 name="logical_name" value="0x00005E142DFF"/>
+         <attr2 type = "unsigned"  permission = "read_write"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+                       
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+ <obis class="Data" name="WEEK_END_DAYS">
+         <describtion value ="
+
+		 WEEK_END_DAYS"
+		 
+		 />
+         <attr1 name="logical_name" value="0x00005E1449FF"/>
+         <attr2 type = "unsigned"  permission = "read_write"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+                       
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+ <obis class="Data" name="Recalc_Counter">
+         <describtion value ="
+
+		 Recalc_Counter"
+		 
+		 />
+         <attr1 name="logical_name" value="0x00005E140DFF"/>
+         <attr2 type = "unsigned"  permission = "read"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+                       
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+<obis class="Data" name="Battery_Remaining_Days">
+         <describtion value =
+		 
+		 "Battery Object"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600606FF"/>
+         <attr2 type = "double-long-unsigned"  permission = "read"/>
+         <DisplayFunction value="true"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+<obis class="Data" name="AMR_Status_Information">
+         <describtion value =
+		 
+		 "AMR status information"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600500FF"/>
+         <attr2 type = "double-long-unsigned"  permission = "read"/>
+         <DisplayFunction value="true"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+<obis class="Data" name="Current_Active_Money_Month">
+         <describtion value =
+		 
+		 "Current Active Money Month"
+		 
+		 />
+         <attr1 name="logical_name" value="0x00005E142EFF"/>
+         <attr2 type = "double-long"  permission = "read"/>
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+        
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="Previous_Active_Money_Month">
+         <describtion value =
+		 
+		 "Previous Active Money Month"
+		 
+		 />
+         <attr1 name="logical_name" value="0x00005E1406FF"/>
+         <attr2 type = "double-long"  permission = "read"/>
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+        
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="Credits_log">
+		 <describtion value ="
+		 
+		Credit log
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x00005E1453FF"/>
+		 <attr2 type = "TstCreditLog"  permission = "read"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->        
+         
+</obis>
+
+<obis class="Data" name="PostPaid_Bill">
+		 <describtion value ="
+		 
+		postpaid bill 
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x00005E1412FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->       
+         
+</obis>
+
+<obis class="Data" name="Display_General_CFG">
+		 <describtion value ="
+		 
+		 the display object which contains the display general configurations
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x00005E144BFF"/>
+		 <attr2 type = "TstDISPLAY_screensGeneralFeatures"  permission = "read_write" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->		 
+</obis>	
+
+<obis class="Data" name="Display_Manual_CFG">
+		 <describtion value ="
+		 
+		 the display object which contains the screens configurations in manual mode
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x00005E1447FF"/>
+		 <attr2 type = "TstDISPLAY_screensFeatures"  permission = "read_write" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <multiBlock value ="true"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->		 
+</obis>	
+
+<obis class="Data" name="Display_Auto_CFG">
+		 <describtion value ="
+		 
+		 the display object which contains the screens configurations in auto mode
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x00005E1446FF"/>
+		 <attr2 type = "TstDISPLAY_screensFeatures"  permission = "read_write" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->		 
+</obis>	
+<obis class="Data" name="Local_date">
+		 <describtion value ="
+		 
+		 Local_date
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0000000902FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->		 
+</obis>	
+
+<obis class="Data" name="Local_Time">
+		 <describtion value ="
+		 
+		 Local_Time
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0000000901FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->		 
+</obis>	
+<obis class="Register" name="GAS_Volume_Register_Total">
+		 <describtion value ="
+		 
+		 Volume_Register_Total life time
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0700030100FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>		  
+</obis>
+
+<obis class="Register" name="WATER_Volume_Register_Total">
+		 <describtion value ="
+		 
+		 Volume_Register_Total life time
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800010000FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>		  
+</obis>
+
+<obis class="Register" name="Error_Object">
+         <describtion value =
+		 
+		 "Error Object"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000616100FF"/>
+         <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "no unit"  />
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "true" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="LoadLimit_CFG">
+		 <describtion value ="
+		 
+		 the load limit configurations
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0000803501FF"/>
+		 <attr2 type = "TstLoadLimit_CFG"  permission = "read_write" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->		 
+</obis>	
+
+<obis class="Data" name="LoadLimit_Plans">
+		 <describtion value ="
+		 
+		 the load limit plans
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0000803502FF"/>
+		 <attr2 type = "TstLoadLimit_Plans"  permission = "read_write" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->		 
+</obis>	
+
+<obis class="Register" name="GAS_Volume_Register_Current">
+		 <describtion value ="
+		 
+		 Volume_Register_Current
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0700032E00FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>
+
+<obis class="Register" name="GAS_FlowRate_Register">
+		 <describtion value ="
+		 
+		 flow rate register
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x07002B0000FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "cubic meter per hour" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>
+
+<obis class="Register" name="GAS_OverLoad_FlowRate_Register">
+		 <describtion value ="
+		 
+		 over load flow rate register
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0700000500FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "cubic meter per hour" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>
+
+<obis class="Register" name="GAS_OverLoad_FlowRate_Duration">
+		 <describtion value ="
+		 
+		 over load flow rate Duration
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0700000501FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "min" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>
+
+<obis class="Register" name="GAS_TOU_Register1_Current">
+		 <describtion value ="
+		 
+		 TOU_Register1_Current
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0700030101FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>	
+
+<obis class="Register" name="GAS_TOU_Register2_Current">
+		 <describtion value ="
+		 
+		 TOU_Register2_Current
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0700030102FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>	
+
+<obis class="Register" name="GAS_TOU_Register3_Current">
+		 <describtion value ="
+		 
+		 TOU_Register3_Current
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0700030103FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>	
+
+<obis class="Register" name="GAS_TOU_Register4_Current">
+		 <describtion value ="
+		 
+		 TOU_Register4_Current
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0700030104FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>	
+
+<obis class="Register" name="GAS_TOU_Register5_Current">
+		 <describtion value ="
+		 
+		 TOU_Register5_Current
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0700030105FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>	
+
+<obis class="Register" name="GAS_TOU_Register1_Previous">
+		 <describtion value ="
+		 
+		 TOU_Register1_Previous
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0700032E01FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>	
+
+<obis class="Register" name="GAS_TOU_Register2_Previous">
+		 <describtion value ="
+		 
+		 TOU_Register2_Previous
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0700032E02FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>	
+
+<obis class="Register" name="GAS_TOU_Register3_Previous">
+		 <describtion value ="
+		 
+		 TOU_Register3_Previous
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0700032E03FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>	
+
+<obis class="Register" name="GAS_TOU_Register4_Previous">
+		 <describtion value ="
+		 
+		 TOU_Register4_Previous
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0700032E04FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>	
+
+<obis class="Register" name="GAS_TOU_Register5_Previous">
+		 <describtion value ="
+		 
+		 TOU_Register5_Previous
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0700032E05FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>	
+<obis class="Register" name="WATER_Volume_Register_Current">
+		 <describtion value ="
+		 
+		 Volume_Register_Current
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800010300FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>
+
+<obis class="Register" name="WATER_FlowRate_Register">
+		 <describtion value ="
+		 
+		 flow rate register
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x08002B0000FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "cubic meter per hour" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>
+
+<obis class="Register" name="WATER_OverLoad_FlowRate_Register">
+		 <describtion value ="
+		 
+		 over load flow rate register
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800020500FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "cubic meter per hour" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>
+
+<obis class="Register" name="WATER_OverLoad_FlowRate_Duration">
+		 <describtion value ="
+		 
+		 over load flow rate Duration
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800020501FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "min" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>
+
+<obis class="Register" name="WATER_TOU_Register1_Current">
+		 <describtion value ="
+		 
+		 TOU_Register1_Current
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800010001FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>	
+
+<obis class="Register" name="WATER_TOU_Register2_Current">
+		 <describtion value ="
+		 
+		 TOU_Register2_Current
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800010002FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>	
+
+<obis class="Register" name="WATER_TOU_Register3_Current">
+		 <describtion value ="
+		 
+		 TOU_Register3_Current
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800010003FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>	
+
+<obis class="Register" name="WATER_TOU_Register4_Current">
+		 <describtion value ="
+		 
+		 TOU_Register4_Current
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800010004FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>	
+
+<obis class="Register" name="WATER_TOU_Register5_Current">
+		 <describtion value ="
+		 
+		 TOU_Register5_Current
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800010005FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>	
+
+<obis class="Register" name="WATER_TOU_Register1_Previous">
+		 <describtion value ="
+		 
+		 TOU_Register1_Previous
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800010301FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>	
+
+<obis class="Register" name="WATER_TOU_Register2_Previous">
+		 <describtion value ="
+		 
+		 TOU_Register2_Previous
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800010302FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>	
+
+<obis class="Register" name="WATER_TOU_Register3_Previous">
+		 <describtion value ="
+		 
+		 TOU_Register3_Previous
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800010303FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>	
+
+<obis class="Register" name="WATER_TOU_Register4_Previous">
+		 <describtion value ="
+		 
+		 TOU_Register4_Previous
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800010304FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>	
+
+<obis class="Register" name="WATER_TOU_Register5_Previous">
+		 <describtion value ="
+		 
+		 TOU_Register5_Previous
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800010305FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>	
+<obis class="Register" name="Correction_Factor">
+		 <describtion value ="
+		 
+		 Correction_Factor
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0700330000FF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>	
+<obis class="GProfile" name="Volume_Profile">
+		 <describtion value ="
+		 
+		 volume profile values
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0000630100FF"/>
+		 <attr2 type = "daily_Energy_period1"  permission = "read_write" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value = "true" attr="1" comment="Reset volume profile values"/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->
+		 
+         
+</obis>
+<obis class="GProfile" name="Current_billing_values_profile">
+		 <describtion value ="
+		 
+		 Current billing values profile
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0000630101FF"/>
+		 <attr2 type = "cur_billing_values"  permission = "read_write" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value = "true" attr="1" comment="Reset Billing values"/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->
+		 
+         
+</obis>
+<obis class="Data" name="COSEM_logical_device_name">
+		 <describtion value ="
+		 
+		 COSEM logical device name 
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x00002A0000FF"/>
+		 <attr2 type = "octet-string" size="16"  permission = "read"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="Security_Test_Attribute_STA1">
+		 <describtion value ="
+		 
+		 Security Test Attribute STA1
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0000806400FF"/>
+		 <attr2 type = "octet-string" size="32"  permission = "read_write"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="HDLC_Physical_Id">
+		 <describtion value ="
+		 
+		 HDLC_Physical_Id 
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0000800212FF"/>
+		 <attr2 type = "unsigned" permission = "read_write"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="Valve_Self_Maintenance">
+		 <describtion value ="
+		 
+		 self maintenance of valve config days 
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x00005E1412FF"/>
+		 <attr2 type = "unsigned" permission = "read_write"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="SpecialChargeCfg">
+         <describtion value =
+		 
+		 "PassiveSpecialCharge_Config"
+		 
+		 />
+         <attr1 name="logical_name" value="0x008080000EFF"/>
+         <attr2 type = "TstSpecialChargeCfgComm"  permission = "read_write"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+        
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="ActiveSpecialChargeCfg">
+         <describtion value =
+		 
+		 "ActiveSpecialCharge_Config"
+		 
+		 />
+         <attr1 name="logical_name" value="0x00005E1454FF"/>
+         <attr2 type = "TstSpecialChargeCfgComm"  permission = "read"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+        
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+
+
+<obis class="Data" name="TariffType">
+         <describtion value =
+		 
+		 "TariffType"
+		 
+		 />
+         <attr1 name="logical_name" value="0x00005E1410FF"/>
+         <attr2 type = "unsigned"  permission = "read"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+        
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="FriendlyPeriodCfg">
+         <describtion value =
+		 
+		 "FriendlyPeriod_Config"
+		 
+		 />
+         <attr1 name="logical_name" value="0x00005E1448FF"/>
+         <attr2 type = "TstFriendlyPeriod"  permission = "read_write"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+        
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="Account_CommunicationFault_WaitingMinutes">
+		 <describtion value ="
+		 
+		   Account Communication Fault Waiting Minutes
+		 "/>
+		 <attr1 name="logical_name" value="0x00005E144EFF"/>
+		 <attr2 type = "long-unsigned"  permission = "read_write"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+
+<obis class="Register" name="Time_For_Scroll_Display">
+         <describtion value =
+		 
+		 "Time For Scroll Display"
+		 
+		 />
+         <attr1 name="logical_name" value="0x00005E226EFF"/>
+         <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "second"  />
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+		 
+</obis>
+
+<obis class="Register" name="Alarm_Object">
+         <describtion value =
+                                
+                                 "Alarm Object"
+                                
+                                 />
+         <attr1 name="logical_name" value="0x0000616200FF"/>
+         <attr2 type = "double-long-unsigned"  permission = "read"/>
+                                <attr3 type = "0" unit = "no unit"  />
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "true" attr="1" comment="Reset Alarm"/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+
+<obis class="Data" name="Alarm_Start_Config_G1">
+                                <describtion value ="
+                                
+                                 Alarm_Config 
+                                 
+                                 "/>
+                                <attr1 name="logical_name" value="0x00005E142AFF"/>
+                                <attr2 type = "TstAlarm_Start_Cfg_Arr_Object_Param"  permission = "read_write" comment="Alarm Start group 1"/>
+                                <DisplayFunction value="false"/>
+                                <DisplayUnit value="false"/>
+                                <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+                                <defDataType type="DATA_TYPE_Unknown"/>
+                                <ControlFlags Decimal_OverFlow = "false" 
+                                                                                   Alarm = "false" 
+                                                                                   Event_Code = "false" 
+                                                                                   Children_allowed = "false" 
+                                                                                   Display_In_LPM = "false" 
+                                                                                   Time_Stamp = "false"
+                                                                                   />
+                                
+                                <action value = "false" attr="1" comment=""/>
+                                <restriction value = "public"/>
+                                <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="Alarm_Start_Config_G2">
+                                <describtion value ="
+                                
+                                 Alarm_Config 
+                                 
+                                 "/>
+                                <attr1 name="logical_name" value="0x00005E142BFF"/>
+                                <attr2 type = "TstAlarm_Start_Cfg_Arr_Object_Param"  permission = "read_write" comment="Alarm Start group 2"/>
+                                <DisplayFunction value="false"/>
+                                <DisplayUnit value="false"/>
+                                <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+                                <defDataType type="DATA_TYPE_Unknown"/>
+                                <ControlFlags Decimal_OverFlow = "false" 
+                                                                                   Alarm = "false" 
+                                                                                   Event_Code = "false" 
+                                                                                   Children_allowed = "false" 
+                                                                                   Display_In_LPM = "false" 
+                                                                                   Time_Stamp = "false"
+                                                                                   />
+                                
+                                <action value = "false" attr="1" comment=""/>
+                                <restriction value = "public"/>
+                                <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="Alarm_Stop_Config_G1">
+                                <describtion value ="
+                                
+                                 Alarm_Config 
+                                 
+                                 "/>
+                                <attr1 name="logical_name" value="0x00005E142CFF"/>
+                                <attr2 type = "TstAlarm_Stop_Cfg_Arr_Object_Param"  permission = "read_write" comment="Alarm Stop group 1"/>
+                                <DisplayFunction value="false"/>
+                                <DisplayUnit value="false"/>
+                                <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+                                <defDataType type="DATA_TYPE_Unknown"/>
+                                <ControlFlags Decimal_OverFlow = "false" 
+                                                                                   Alarm = "false" 
+                                                                                   Event_Code = "false" 
+                                                                                   Children_allowed = "false" 
+                                                                                   Display_In_LPM = "false" 
+                                                                                   Time_Stamp = "false"
+                                                                                   />
+                                
+                                <action value = "false" attr="1" comment=""/>
+                                <restriction value = "public"/>
+                                <group value = "no_group"/>
+</obis>
+
+<obis class="Data" name="Alarm_Stop_Config_G2">
+                                <describtion value ="
+                                
+                                 Alarm_Config 
+                                 
+                                 "/>
+                                <attr1 name="logical_name" value="0x00005E142DFF"/>
+                                <attr2 type = "TstAlarm_Stop_Cfg_Arr_Object_Param"  permission = "read_write" comment="Alarm Stop group 2"/>
+                                <DisplayFunction value="false"/>
+                                <DisplayUnit value="false"/>
+                                <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+                                <defDataType type="DATA_TYPE_Unknown"/>
+                                <ControlFlags Decimal_OverFlow = "false" 
+                                                                                   Alarm = "false" 
+                                                                                   Event_Code = "false" 
+                                                                                   Children_allowed = "false" 
+                                                                                   Display_In_LPM = "false" 
+                                                                                   Time_Stamp = "false"
+                                                                                   />
+                                
+                                <action value = "false" attr="1" comment=""/>
+                                <restriction value = "public"/>
+                                <group value = "no_group"/>
+</obis>
+
+
+<obis class="GProfile" name="Disconnect_Control_Log">
+         <describtion value =
+		 
+		 "Disconnect Control log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000636202FF"/>
+         <attr2 type = "Disconnect_Control_Log_Values"  permission = "read_write" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+         <action value = "true" attr="1" comment="Reset Disconnect Control Log"/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->
+                            
+
+</obis>
+
+<obis class="Data" name="Event_Object_Disconnect_Control_Log">
+         <describtion value =
+		 
+		 "Event Object Disconnect Control log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600B02FF"/>
+         <attr2 type = "unsigned"  permission = "read"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+        
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+
+
+<obis class="Data" name="Event_Object_Firmware_Event_Log">
+         <describtion value =
+		 
+		 "Event Object Firmware Event Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600B04FF"/>
+         <attr2 type = "unsigned"  permission = "read"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+
+<obis class="GProfile" name="Firmware_Event_Log">
+         <describtion value =
+		 
+		 "Firmware Event Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000636204FF"/>
+         <attr2 type = "Firmware_Event_Log_Values"  permission = "read_write" />
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+         <action value = "true" attr="1" comment="Reset Firmware Event Log"/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+         <!-- for Single phase , 2 phase , polyphase  -->
+                            
+         
+</obis>
+
+
+<obis class="Data" name="Event_Object_Synchronization_Event_Log">
+         <describtion value =
+		 
+		 "Event Object Synchronization Event Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600B08FF"/>
+         <attr2 type = "unsigned"  permission = "read"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+
+<obis class="GProfile" name="Synchronization_Event_Log">
+         <describtion value =
+		 
+		 "Synchronization Event Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000636208FF"/>
+         <attr2 type = "Synchronization_Event_Log_Values"  permission = "read_write" />
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+         <action value = "true" attr="1" comment="Reset Synchronization Event Log"/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+         <!-- for Single phase , 2 phase , polyphase  -->
+                            
+         
+</obis>
+
+
+
+<obis class="Data" name="Event_Object_Common_Event_Log">
+         <describtion value =
+		 
+		 "Event Object - Common Event Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600B07FF"/>
+         <attr2 type = "unsigned"  permission = "read"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+
+<obis class="GProfile" name="Common_Event_Log">
+         <describtion value =
+		 
+		 "Common Event Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000636207FF"/>
+         <attr2 type = "Common_Event_Log_Values"  permission = "read_write" />
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+         <action value = "true" attr="1" comment="Reset Common Event Log"/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+         <!-- for Single phase , 2 phase , polyphase  -->
+                            
+         
+</obis>
+
+<obis class="Data" name="Event_Object_Custome_With_Param_Event_Log">
+         <describtion value =
+		 
+		 "Event Object - Custome with Param Event Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600B0DFF"/>
+         <attr2 type = "unsigned"  permission = "read"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+
+
+<obis class="Data" name="Event_Object_Custome_Event_Log">
+         <describtion value =
+		 
+		 "Event Object - Custome Event Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600B0CFF"/>
+         <attr2 type = "unsigned"  permission = "read"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+
+
+<obis class="GProfile" name="Custome_Event_Log">
+         <describtion value =
+		 
+		 "Custome Event Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x000063620CFF"/>
+         <attr2 type = "Custome_Event_Log_Values"  permission = "read_write" />
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+         <action value = "true" attr="1" comment="Reset Custome Event Log"/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+         <!-- for Single phase , 2 phase , polyphase  -->
+                            
+         
+</obis>
+
+<obis class="Data" name="Event_Object_Self_Check_Event_Log">
+         <describtion value =
+		 
+		 "Event Object - Self Check Event Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600B0BFF"/>
+         <attr2 type = "unsigned"  permission = "read"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+<obis class="GProfile" name="Self_Check_Event_Log">
+         <describtion value =
+		 
+		 "Self Check Event Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x000063620BFF"/>
+         <attr2 type = "Self_Check_Event_Log_Values"  permission = "read_write" />
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+         <action value = "true" attr="1" comment="Reset Self Check Event Log"/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+         <!-- for Single phase , 2 phase , polyphase  -->
+                            
+         
+</obis>
+
+<obis class="Data" name="Event_Object_Standard_Event_Log">
+         <describtion value =
+		 
+		 "Event Object - Standard Event Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600B00FF"/>
+         <attr2 type = "unsigned"  permission = "read"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+
+<obis class="GProfile" name="Standard_Event_Log">
+         <describtion value =
+		 
+		 "Standard Event Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000636200FF"/>
+         <attr2 type = "standard_Event_log_Values"  permission = "read_write" />
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+         <action value = "true" attr="1" comment="Reset Standard Event Log"/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+         <!-- for Single phase , 2 phase , polyphase  -->
+                            
+         
+</obis>
+
+
+<obis class="Data" name="Event_Object_Fraud_Detection_Log">
+         <describtion value =
+		 
+		 "Event Object Fraud Detection Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600B01FF"/>
+         <attr2 type = "unsigned"  permission = "read"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+
+<obis class="GProfile" name="Fraud_Detection_Log">
+         <describtion value =
+		 
+		 "Fraud Detection Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000636201FF"/>
+         <attr2 type = "Fraud_Detection_Log_Values"  permission = "read_write" />
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+         <action value = "true" attr="1" comment="Reset Fraud Detection Log"/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+         <!-- for Single phase , 2 phase , polyphase  -->
+                            
+         
+</obis>
+
+<obis class="GProfile" name="Custome_With_Param_Event_Log">
+         <describtion value =
+		 
+		 "Custome with Param Event Log"
+		 
+		 />
+         <attr1 name="logical_name" value="0x00005E1440FF"/>
+         <attr2 type = "Custome_With_param_Event_Log_Values"  permission = "read_write" />
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+         <action value = "true" attr="1" comment="Reset Custome with param Event Log"/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+         <!-- for Single phase , 2 phase , polyphase  -->
+                            
+         
+</obis>
+
+<obis class="Register" name="GAS_Leakage_Detection_Threshold">
+		 <describtion value ="
+		 
+		 
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x07005E1402FF"/>
+		 <attr2 type = "unsigned"  permission = "read_write"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "litre"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>
+
+<obis class="Register" name="GAS_Leakage_Detection_Threshold_Duration">
+		 <describtion value ="
+		 
+		
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x07005E1403FF"/>
+		 <attr2 type = "unsigned"  permission = "read_write"/>
+		 <attr3 type = "0" unit = "hour" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>
+
+<obis class="Register" name="WATER_Leakage_Detection_Threshold">
+		 <describtion value ="
+		 
+		 
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800020400FF"/>
+		 <attr2 type = "unsigned"  permission = "read_write"/>
+		 <attr3 type = "0" unit = "litre" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "litre"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>
+
+<obis class="Register" name="WATER_Leakage_Detection_Threshold_Duration">
+		 <describtion value ="
+		 
+		
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x0800020401FF"/>
+		 <attr2 type = "unsigned"  permission = "read_write"/>
+		 <attr3 type = "0" unit = "hour" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>
+
+<obis class="Data" name="GAS_Number_Days_No_Consumption">
+		 <describtion value ="
+		 
+		 nuber of days without consumption
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x07005E1401FF"/>
+		 <attr2 type = "unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "no unit" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>
+
+<obis class="Data" name="WATER_Number_Days_No_Consumption">
+		 <describtion value ="
+		 
+		 nuber of days without consumption
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x08005E1401FF"/>
+		 <attr2 type = "unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "no unit" />
+		 <DisplayFunction value="true"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "water"/>
+</obis>
+
+<obis class="Data" name="Self_test_result">
+		 <describtion value ="
+		 
+		   Self test result
+		 "/>
+		 <attr1 name="logical_name" value="0x00005E144DFF"/>
+		 <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+<obis class="Data" name="FimwareImage1_ActivationInformation">
+		 <describtion value ="
+		 
+		  Describe all the information needed about the image such as 
+		  Creation Date and time 
+		  Last Edit Date and time 
+		  Flashing Date and time 
+		  Image ID
+		  Image signature 
+		  Image Flashing status
+		  Image Download status
+		 "/>
+		 <attr1 name="logical_name" value="0x01005E1439FF"/>
+		 <attr2 type = "ImageInfo"  permission = "read"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+
+
+<obis class="Data" name="FimwareImage2_ActivationInformation">
+		 <describtion value ="
+		 
+		  Describe all the information needed about the image such as 
+		  Creation Date and time 
+		  Last Edit Date and time 
+		  Flashing Date and time 
+		  Image ID
+		  Image signature 
+		  Image Flashing status
+		  Image Download status
+		 "/>
+		 <attr1 name="logical_name" value="0x01005E143AFF"/>
+		 <attr2 type = "ImageInfo"  permission = "read"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+
+
+<obis class="Data" name="FimwareImage3_ActivationInformation">
+		 <describtion value ="
+		 
+		  Describe all the information needed about the image such as 
+		  Creation Date and time 
+		  Last Edit Date and time 
+		  Flashing Date and time 
+		  Image ID
+		  Image signature 
+		  Image Flashing status
+		  Image Download status
+		 "/>
+		 <attr1 name="logical_name" value="0x01005E143BFF"/>
+		 <attr2 type = "ImageInfo"  permission = "read"/>
+									  
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+							  
+</obis>
+
+
+<obis class="Data" name="FimwareModemImage_ActivationInformation">
+		 <describtion value ="
+		 
+		  Describe all the information needed about the image such as 
+		  Creation Date and time 
+		  Last Edit Date and time 
+		  Flashing Date and time 
+		  Image ID
+		  Image signature 
+		  Image Flashing status
+		  Image Download status
+		 "/>
+		 <attr1 name="logical_name" value="0x01005E143CFF"/>
+		 <attr2 type = "ImageInfo"  permission = "read"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+							
+		 
+</obis>
+
+<obis class="Data" name="FimwareImage1_FlashingDateTime">
+		 <describtion value ="
+		 
+		  Describe all the information needed about the image such as 
+		  Creation Date and time 
+		  Last Edit Date and time 
+		  Flashing Date and time 
+		  Image ID
+		  Image signature 
+		  Image Flashing status
+		  Image Download status
+		  
+		 "/>
+		 <attr1 name="logical_name" value="0x01005E143DFF"/>
+		 <attr2 type = "TstDateTime"  permission = "read_write"/>
+									 
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+							  
+</obis>
+
+<obis class="Data" name="FimwareImage2_FlashingDateTime">
+		 <describtion value ="
+		 
+		  Describe all the information needed about the image such as 
+		  Creation Date and time 
+		  Last Edit Date and time 
+		  Flashing Date and time 
+		  Image ID
+		  Image signature 
+		  Image Flashing status
+		  Image Download status
+		 "/>
+		 <attr1 name="logical_name" value="0x01005E143EFF"/>
+		 <attr2 type = "TstDateTime"  permission = "read_write"/>
+									  
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+								
+</obis>
+
+
+<obis class="Data" name="FimwareImage3_FlashingDateTime">
+		 <describtion value ="
+		 
+		  Describe all the information needed about the image such as 
+		  Creation Date and time 
+		  Last Edit Date and time 
+		  Flashing Date and time 
+		  Image ID
+		  Image signature 
+		  Image Flashing status
+		  Image Download status
+		 "/>
+		 <attr1 name="logical_name" value="0x01005E143FFF"/>
+		 <attr2 type = "TstDateTime"  permission = "read_write"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+
+
+<obis class="Data" name="FimwareModemImage_FlashingDateTime">
+		 <describtion value ="
+		 
+		  Describe all the information needed about the image such as 
+		  Creation Date and time 
+		  Last Edit Date and time 
+		  Flashing Date and time 
+		  Image ID
+		  Image signature 
+		  Image Flashing status
+		  Image Download status
+		 "/>
+		 <attr1 name="logical_name" value="0x01005E1440FF"/>
+		 <attr2 type = "TstDateTime"  permission = "read_write"/>
+									 
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+</obis>
+<obis class="Data" name="Calbration_Meter_Offset">
+		 <describtion value ="
+		 
+			GAS meter Conversion Factor(Meter offset)  	
+		 "/>
+		 <attr1 name="logical_name" value="0x0700330000FF"/>
+		 <attr2 type = "long64"  permission = "read_write"/>
+		 <attr3 type = "0" unit = "no unit" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment="Meter offset"/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>
+
+
+<obis class="Data" name="Calbration_Meter_Error_Factor">
+		 <describtion value ="
+		 
+			GAS meter correction Factor(Meter Error)  	
+		 "/>
+		 <attr1 name="logical_name" value="0x0700340000FF"/>
+		 <attr2 type = "long64"  permission = "read_write"/>
+		 <attr3 type = "0" unit = "no unit" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment="Meter Error K Factor"/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>
+
+<obis class="Data" name="Calbration_Operation_Control">
+		 <describtion value ="
+
+			used to active, deactive and reset calbration 
+			operation
+		 "/>
+		 <attr1 name="logical_name" value="0x07005E1405FF"/>
+		 <attr2 type = "unsigned"  permission = "read_write"/>
+		 <attr3 type = "0" unit = "no unit" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment="active, deactive and reset calbration 
+			operation"/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>
+
+
+<obis class="Data" name="Calbration_Self_Factors">
+		 <describtion value ="
+
+			Self Calbration Factors 
+		 "/>
+		 <attr1 name="logical_name" value="0x07005E1407FF"/>
+		 <attr2 type = "Calbration_Factors"  permission = "read_write"/>
+		 <attr3 type = "0" unit = "no unit" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>
+
+
+<obis class="Data" name="Calbration_Factors">
+		 <describtion value ="
+
+			Set Calbration Factors
+		 "/>
+		 <attr1 name="logical_name" value="0x07005E1406FF"/>
+		 <attr2 type = "Calbration_Factors"  permission = "read_write"/>
+		 <attr3 type = "0" unit = "no unit" />
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value='false' attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <energyType value = "gas"/>
+</obis>
+
+<obis class="Data" name="Last_Tamper_Code_DateTime">
+         <describtion value =
+		 
+		 "Last_Tamper_Code_DateTime"
+		 
+		 />
+         <attr1 name="logical_name" value="0x00005E1428FF"/>
+         <attr2 type = "Tst_LastTamper"  permission = "read"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+
+<obis class="Data" name="LowCredit_thresholdCFG">
+		 <describtion value ="
+		 
+		LowCredit threshold CFG
+		Not Used in coc data modle
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x000050000000"/>
+		 <attr2 type = "TstLowCredit_Threshold"  permission = "read_write"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->        
+         
+</obis>
+
+
+<obis class="Data" name="TOTAL_TAMPER_COUNTER">
+         <describtion value =
+		 
+		 "TOTAL_TAMPER_COUNTER"
+		 
+		 />
+         <attr1 name="logical_name" value="0x01005E1442FF"/>
+         <attr2 type = "double-long-unsigned"  permission = "read"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+
+<obis class="Register" name="METER_COVER_Object">
+         <describtion value =
+		 
+		 "METER COVER Object"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600150FF"/>
+         <attr2 type = "double-long-unsigned"  permission = "read"/>
+		 <attr3 type = "0" unit = "second"  />
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "true" attr="1" comment=""/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+
+<obis class="GProfile" name="End_OF_Billing_Event_Log">
+         <describtion value =
+		 
+		 "End of Billing Event Log group"
+		 
+		 />
+         <attr1 name="logical_name" value="0x000063620EFF"/>
+         <attr2 type = "Tst_EOB_Event_Log"  permission = "read" />
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+         <action value = "true" attr="1" comment="EOB Event Log reset"/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+		 <energyType value = "gas"/>
+
+         <!-- for Single phase , 2 phase , polyphase  -->
+                            
+         
+</obis>
+
+
+<obis class="Data" name="Number_OF_EOB">
+         <describtion value =
+		 
+		 "Number_OF_EOB"
+		 
+		 />
+         <attr1 name="logical_name" value="0x0000600B02FF"/>
+         <attr2 type = "long-unsigned"  permission = "read"/>
+         <DisplayFunction value="false"/>
+         <DisplayUnit value="false"/>
+         <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+         <defDataType type="DATA_TYPE_Unknown"/>
+         <ControlFlags Decimal_OverFlow = "false"
+                       Alarm = "false"
+                       Event_Code = "false"
+                       Children_allowed = "false"
+                       Display_In_LPM = "false"
+                       Time_Stamp = "false"
+                       />
+        
+         <action value = "false" attr="1" comment="Number_OF_EOB"/>
+         <restriction value = "public"/>
+         <group value = "no_group"/>
+</obis>
+
+
+<obis class="Data" name="MoneyCredit_ThresholdCFG">
+		 <describtion value ="
+		 
+		 Threshold Money Credit
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x00005E1443FF"/>
+		 <attr2 type = "TstMoneyCredit_Threshold"  permission = "read_write"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->        
+         
+</obis>
+
+
+<obis class="Data" name="CosumptionCredit_ThresholdCFG">
+		 <describtion value ="
+		 
+		 Threshold Cosumption Credit
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x00005E1444FF"/>
+		 <attr2 type = "TstCosumptionCredit_Threshold"  permission = "read_write"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->        
+         
+</obis>
+
+
+
+<obis class="Data" name="TimeCredit_ThresholdCFG">
+		 <describtion value ="
+		 
+		 Threshold Time Credit
+		 
+		 "/>
+		 <attr1 name="logical_name" value="0x00005E1445FF"/>
+		 <attr2 type = "TstTimeCredit_Threshold"  permission = "read_write"/>
+		 <DisplayFunction value="false"/>
+		 <DisplayUnit value="false"/>
+		 <DisplayScalerUnit scaler = "0" unit = "no unit"  />
+		 <defDataType type="DATA_TYPE_Unknown"/>
+		 <ControlFlags Decimal_OverFlow = "false" 
+					   Alarm = "false" 
+					   Event_Code = "false" 
+					   Children_allowed = "false" 
+					   Display_In_LPM = "false" 
+					   Time_Stamp = "false"
+					   />
+		 <action value = "false" attr="1" comment=""/>
+		 <restriction value = "public"/>
+		 <group value = "no_group"/>
+		 <!-- for Single phase , 2 phase , polyphase  -->        
+         
+</obis>
+
+
+
+
+</Base>

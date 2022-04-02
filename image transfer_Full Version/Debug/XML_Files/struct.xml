@@ -1,0 +1,609 @@
+<structFile>	
+	<DataChoice>
+		<Data_types>
+		    <type name="null-data" value=" " soft_set ="Dlms_mXdrNull" set = "" get = "Dlms_Xdr_gFormatNull" tag="0" size="" DCU_set = "" DCU_get = "DCU_Dlms_Xdr_gFormatNull"/> 
+			<type name="bit-string" value="Dlms_Xdr_mBit" fw_tag ="BIT_STRING" soft_set ="" set  = "Dlms_Xdr_gGetBitString" get ="Dlms_Xdr_gFormatBitString" tag="4" size=""/>
+			<type name="double-long" value="int32_t" fw_tag ="SIGNED_32" soft_set ="Dlms_mXdrInt32" set  = "Dlms_Xdr_gGetDoubleLongSigned" get = "Dlms_Xdr_gFormatDoubleLongSigned" tag="5" size="5" DCU_set  = "DCU_Dlms_Xdr_gGetDoubleLongSigned" DCU_get = "DCU_Dlms_Xdr_gFormatDoubleLongSigned"/>
+			<type name="double-long-unsigned" value="uint32_t" fw_tag ="UNSIGNED_32" soft_set ="Dlms_mXdrUint32" set= "Dlms_Xdr_gGetDoubleLongUnsigned" get = "Dlms_Xdr_gFormatDoubleLongUnsigned"  tag="6" size="5" DCU_set= "DCU_Dlms_Xdr_gGetDoubleLongUnsigned" DCU_get = "DCU_Dlms_Xdr_gFormatDoubleLongUnsigned"/>
+			<type name="octet-string" value="TU08"  fw_tag ="STRING" soft_set ="" set  = "Dlms_Xdr_gGetByteString" get ="Dlms_Xdr_gFormatByteString" tag="9" size=""/>
+			<type name="visible-string"  soft_set ="Dlms_mXdrAscii" set="" tag="10" size=""/>
+			<type name="integer" value="int8_t"  fw_tag ="SIGNED_8" soft_set ="Dlms_mXdrInt8" set= "Dlms_Xdr_gGetSigned" get ="Dlms_Xdr_gFormatSigned" tag="15" size="2" DCU_set= "DCU_Dlms_Xdr_gGetSigned" DCU_get ="DCU_Dlms_Xdr_gFormatSigned"/>
+			<type name="long" value="int16_t" fw_tag ="SIGNED_16" soft_set ="Dlms_mXdrInt16" set="Dlms_Xdr_gGetLongSigned" get = "Dlms_Xdr_gFormatLongSigned" tag="16" size="3" DCU_set="DCU_Dlms_Xdr_gGetLongSigned" DCU_get = "DCU_Dlms_Xdr_gFormatLongSigned"/>
+			<type name="unsigned" value= "TU08"  fw_tag ="UNSIGNED_8" soft_set ="Dlms_mXdrUint8" set="Dlms_Xdr_gGetUnsigned" get= "Dlms_Xdr_gFormatUnsigned" tag="17" size="2" DCU_set="DCU_Dlms_Xdr_gGetUnsigned" DCU_get= "DCU_Dlms_Xdr_gFormatUnsigned"/>
+			<type name="long-unsigned" value="TU16"  fw_tag ="UNSIGNED_16" soft_set ="Dlms_mXdrUint16" set="Dlms_Xdr_gGetLongUnsigned"  get = "Dlms_Xdr_gFormatLongUnsigned" tag="18" size="3" DCU_set="DCU_Dlms_Xdr_gGetLongUnsigned"  DCU_get = "DCU_Dlms_Xdr_gFormatLongUnsigned"/>
+			<type name="long64" value="int64_t" fw_tag ="SIGNED_64" soft_set ="" set="Dlms_Xdr_gGetLong64Signed" get="Dlms_Xdr_gFormatLong64Signed" tag="20" size="9"/>
+			<type name="long64-unsigned" value="uint64_t" fw_tag ="UNSIGNED_64" soft_set ="Dlms_mXdrUint64" set="Dlms_Xdr_gGetLong64Unsigned" get="Dlms_Xdr_gFormatLong64Unsigned"  tag="21" size="9" DCU_set="DCU_Dlms_Xdr_gGetUnsigned64" DCU_get="DCU_Dlms_Xdr_gFormatUnsigned64"/>
+			<type name="float32" value="float" soft_set ="Dlms_mXdrFloat32" set="" tag="23" size="5"/>
+			<type name="float64" value="float" soft_set ="Dlms_mXdrFloat64" set="" tag="24" size="9"/>
+			<type name="array" set="Dlms_Xdr_mArray" soft_set ="Dlms_mXdrArray" get ="Dlms_Xdr_mArray" tag="1" size="" DCU_set="Dlms_Xdr_mArray"  DCU_get ="Dlms_Xdr_mArray"/>
+			<type name="structure" set="Dlms_Xdr_mStruct" soft_set ="Dlms_mXdrStruct" get="Dlms_Xdr_mStruct" tag="2" size="" DCU_set="Dlms_Xdr_mStruct" DCU_get="Dlms_Xdr_mStruct"/>
+			<type name="compact-array" soft_set ="" tag="19" size=""/>
+			<type name="TstDateTime" value="TstDateTime" fw_tag ="DATE_TIME" soft_set =" " set  = "Dlms_Xdr_gGetDateTime" get = "Dlms_Xdr_gFormatDateTimeStruct" tag="22" size="14" DCU_set  = "DCU_Dlms_Xdr_gGetDateTime" DCU_get = "DCU_Dlms_Xdr_gFormatDateTimeStruct"/>
+		</Data_types>
+		
+		<RegisterChoice>
+		 	<type name="null-data" value=" " soft_set ="Dlms_mXdrNull" set = "" get = "" tag="0" DCU_set = "" DCU_get = ""/>
+			<type name="bit-string" value=" " fw_tag ="BIT_STRING" soft_set ="" set  = "" tag="4"/>
+			<type name="double-long" value="int32_t" fw_tag ="SIGNED_32" soft_set ="Dlms_mXdrInt32" set  = "Dlms_Xdr_gGetDoubleLongSigned" get = "Dlms_Xdr_gFormatDoubleLongSigned" tag="5" DCU_set  = "DCU_Dlms_Xdr_gGetDoubleLongSigned" DCU_get = "DCU_Dlms_Xdr_gFormatDoubleLongSigned"/>
+			<type name="double-long-unsigned" value="uint32_t" fw_tag ="UNSIGNED_32" soft_set ="Dlms_mXdrUint32" set= "Dlms_Xdr_gGetDoubleLongUnsigned" get = "Dlms_Xdr_gFormatDoubleLongUnsigned"  tag="6" DCU_set= "DCU_Dlms_Xdr_gGetDoubleLongUnsigned" DCU_get = "DCU_Dlms_Xdr_gFormatDoubleLongUnsigned"/>
+			<type name="octet-string" value=" " fw_tag ="STRING" soft_set ="" set  = ""  tag="9"/>
+			<type name="visible-string"  soft_set ="Dlms_mXdrAscii" set="" tag="10"/>
+			<type name="integer" value="int8_t" fw_tag ="SIGNED_8" soft_set ="Dlms_mXdrInt8" set= "Dlms_Xdr_gGetSigned" get ="Dlms_Xdr_gFormatSigned" tag="15" DCU_set= "DCU_Dlms_Xdr_gGetSigned" DCU_get ="DCU_Dlms_Xdr_gFormatSigned"/>
+			<type name="long" value="int16_t" fw_tag ="SIGNED_16"  soft_set ="Dlms_mXdrInt16" set="Dlms_Xdr_gGetLongSigned" get = "Dlms_Xdr_gFormatLongSigned" tag="16" DCU_set="DCU_Dlms_Xdr_gGetLongSigned" DCU_get = "DCU_Dlms_Xdr_gFormatLongSigned"/>
+			<type name="unsigned" value= "uint8_t"  fw_tag ="UNSIGNED_8" soft_set ="Dlms_mXdrUint8" set="Dlms_Xdr_gGetUnsigned" get= "Dlms_Xdr_gFormatUnsigned" tag="17" DCU_set="DCU_Dlms_Xdr_gGetUnsigned" DCU_get= "DCU_Dlms_Xdr_gFormatUnsigned"/>
+			<type name="long-unsigned" value="uint16_t"  fw_tag ="UNSIGNED_16" soft_set ="Dlms_mXdrUint16" set="Dlms_Xdr_gGetLongUnsigned"  get = "Dlms_Xdr_gFormatLongUnsigned" tag="18" DCU_set="DCU_Dlms_Xdr_gGetLongUnsigned"  DCU_get = "DCU_Dlms_Xdr_gFormatLongUnsigned"/>
+			<type name="long64" value="int64_t" fw_tag ="SIGNED_64" soft_set ="" set=""  tag="20"/>
+			<type name="long64-unsigned" value="uint64_t"  fw_tag ="UNSIGNED_64" soft_set ="Dlms_mXdrUint64" set="Dlms_Xdr_gGetLong64Unsigned" get="Dlms_Xdr_gFormatUnsigned64"  tag="21" DCU_set="DCU_Dlms_Xdr_gGetUnsigned64" DCU_get="DCU_Dlms_Xdr_gFormatUnsigned64"/>
+			<type name="float32" value="float" soft_set ="Dlms_mXdrFloat32" set="" tag="23"/>
+			<type name="TstDateTime" value="TstDateTime" fw_tag ="DATE_TIME" soft_set =" " set  = "Dlms_Xdr_gGetDateTime" get = "Dlms_Xdr_gFormatDateTimeStruct" tag="22" size="14" DCU_set  = "DCU_Dlms_Xdr_gGetDateTime" DCU_get = "DCU_Dlms_Xdr_gFormatDateTimeStruct"/>	
+	</RegisterChoice>
+		<unit>
+		<type enum="1" Unit="a" Quantity="time" UnitName ="year" Tag="Cosem_eY"/>
+		<type enum="2" Unit="mo" Quantity="time" UnitName ="month" Tag = "Cosem_eMO"/>
+		<type enum="3" Unit="wk" Quantity="time" UnitName ="week" Tag="Cosem_eWK"/>
+		<type enum="4" Unit="d" Quantity="time" UnitName ="day" Tag="Cosem_eD"/>
+		<type enum="5" Unit="h" Quantity="time" UnitName ="hour" Tag="Cosem_eH"/>
+		<type enum="6" Unit="min" Quantity="time" UnitName ="min" Tag="Cosem_eM"/>
+		<type enum="7" Unit="s" Quantity="time" UnitName ="second" Tag="Cosem_eS"/>
+		<type enum="8" Unit=" " Quantity="(phase)angle" UnitName ="degree" Tag="Cosem_eDegree"/>
+		<type enum="15" Unit="m3/h" Quantity="volume flux" UnitName ="cubic meter per hour" Tag="Cosem_eSVolume"/>
+		<type enum="19" Unit="l" Quantity="volume" UnitName ="litre" Tag="Cosem_eLitre"/>
+		<type enum="27" Unit="W" Quantity="active power(p)" UnitName ="watt" Tag="Cosem_eWatt"/>
+		<type enum="28" Unit="VA" Quantity="apparent power(S)" UnitName ="volt-ampere" Tag="Cosem_eVA"/>
+		<type enum="29" Unit="var" Quantity="reactive power(Q)" UnitName ="var" Tag="Cosem_eVAR"/>
+		<type enum="30" Unit="Wh" Quantity="active power" UnitName ="watt-hour" Tag="Cosem_eWh"/>
+		<type enum="31" Unit="VAh" Quantity="apparent energy" UnitName ="volt-ampere-hour" Tag="Cosem_eVAh"/>
+		<type enum="32" Unit="varh" Quantity="reative energy" UnitName ="var-hour" Tag="Cosem_eVARh"/>
+		<type enum="33" Unit="A" Quantity="current(I)" UnitName ="ampere" Tag="Cosem_eAmpere"/>
+		<type enum="34" Unit="C" Quantity="electrical charge(Q)" UnitName ="coulomb" Tag="Cosem_eCoulomb"/>
+		<type enum="35" Unit="V" Quantity="voltage(U)" UnitName ="volt" Tag="Cosem_eVolt"/>
+		<type enum="41" Unit="T" Quantity="magnetic flux density(B)" UnitName ="tesla" Tag="Cosem_eTesla"/>
+		<type enum="44" Unit="HZ" Quantity="frequency" UnitName ="hertz" Tag="Cosem_eHz"/>
+		<type enum="56" Unit="" Quantity="percentage" UnitName ="%" Tag="Cosem_ePercentage"/>
+		<type enum="57" Unit="Ah" Quantity="ampere-hours" UnitName ="ampere-hours" Tag=""/>
+		<type enum="70" Unit="dBm" Quantity="Signal strength" UnitName ="Signal-strength" Tag="Cosem_edBm"/>
+		<type enum="254" Unit="Cosem_eOtherUnit" Quantity="other-unit" UnitName ="other unit" Tag="Cosem_eOtherUnit"/>
+		<type enum="255" Unit="Cosem_eNoUnit" Quantity="no-unit" UnitName ="no unit" Tag="Cosem_eNoUnit"/>
+	</unit>
+	<DefDataTypes>
+		<defDataType value = "DATA_TYPE_V" tag = "CAL_ITF_DATA_TYPE_V"/>
+		<defDataType value = "DATA_TYPE_A" tag = "CAL_ITF_DATA_TYPE_A"/>
+		<defDataType value = "DATA_TYPE_Wh" tag = "CAL_ITF_DATA_TYPE_Wh"/>
+		<defDataType value = "DATA_TYPE_VArh" tag = "CAL_ITF_DATA_TYPE_VArh"/>
+		<defDataType value = "DATA_TYPE_VAh" tag = "CAL_ITF_DATA_TYPE_VAh"/>
+		<defDataType value = "DATA_TYPE_W" tag = "CAL_ITF_DATA_TYPE_W"/>
+		<defDataType value = "DATA_TYPE_VAr" tag = "CAL_ITF_DATA_TYPE_VAr"/>
+		<defDataType value = "DATA_TYPE_VA" tag = "CAL_ITF_DATA_TYPE_VA"/>
+		<defDataType value = "DATA_TYPE_PF" tag = "CAL_ITF_DATA_TYPE_PF"/>
+		<defDataType value = "DATA_TYPE_Hz" tag = "CAL_ITF_DATA_TYPE_Hz"/>
+		<defDataType value = "DATA_TYPE_C" tag = "CAL_ITF_DATA_TYPE_C"/>
+		<defDataType value = "DATA_TYPE_DateTime" tag = "CAL_ITF_DATA_TYPE_DateTime"/>)
+		<defDataType value = "DATA_TYPE_DateTimeCompUTC" tag = "CAL_ITF_DATA_TYPE_DateTimeCompUTC"/>
+		<defDataType value = "DATA_TYPE_SERVICE_V" tag = "CAL_ITF_DATA_TYPE_SERVICE_V"/>
+		<defDataType value = "DATA_TYPE_DateTimeExp" tag = "CAL_ITF_DATA_TYPE_DateTimeExp"/>
+		<defDataType value = "DATA_TYPE_ElapsedTime" tag = "CAL_ITF_DATA_TYPE_ElapsedTime"/>
+		<defDataType value = "DATA_TYPE_Unknown" tag = "CAL_ITF_DATA_TYPE_Unknown"/>
+		<defDataType value = "DATA_TYPE_ProfileStatus" tag = "CAL_ITF_DATA_TYPE_ProfileStatus"/>
+		<defDataType value = "DATA_TYPE_DispeventCode" tag = "CAL_ITF_DATA_TYPE_DispeventCode"/>
+		<defDataType value = "DATA_TYPE_TimeThreshold" tag = "CAL_ITF_DATA_TYPE_TimeThreshold"/>
+		<defDataType value = "DATA_TYPE_Counter" tag = "CAL_ITF_DATA_TYPE_Counter"/>
+		<defDataType value = "DATA_TYPE_ActTamperStatus" tag = "CAL_ITF_DATA_TYPE_ActTamperStatus"/>
+		<defDataType value = "DATA_TYPE_DATA_UNSIGNED_32" tag = "CAL_ITF_DATA_TYPE_DATA_UNSIGNED_32"/>
+		<defDataType value = "DATA_TYPE_DATA_UNSIGNED_16" tag = "CAL_ITF_DATA_TYPE_DATA_UNSIGNED_16"/>
+		<defDataType value = "DATA_TYPE_DATA_UNSIGNED_08" tag = "CAL_ITF_DATA_TYPE_DATA_UNSIGNED_08"/>
+		<defDataType value = "DATA_TYPE_dBm" tag = "CAL_ITF_DATA_TYPE_dBm"/>
+		<defDataType value = "DATA_TYPE_PULSAR_CONST" tag = "CAL_ITF_DATA_TYPE_PULSAR_CONST"/>
+		<defDataType value = "DATA_TYPE_PULSAR_PULSE_LEN" tag = "CAL_ITF_DATA_TYPE_PULSAR_PULSE_LEN"/>
+	</DefDataTypes>
+	
+	
+    <meterPhase VarName="METER_PHASE_TYPE">
+		<Option Name = "Single" Tag="_1_PHASE_"/>
+		<Option Name = "Poly" Tag="_2_PHASE_"/>
+		<Option Name = "Three" Tag="_3_PHASE_"/>
+	</meterPhase>
+	<meterType VarName="METER_TYPE">
+		<Option Name = "direct" Tag="DIRECT"/>
+		<Option Name = "indirect" Tag="INDIRECT"/>
+	</meterType>
+	<energyType >
+		<Option Name = "active" Tag="ACTIVE_ENERGY"/>	
+		<Option Name = "reactive" Tag="REACTIVE_ENERGY"/>
+		<Option Name = "import" Tag="IMPORT_ENERGY"/>
+		<Option Name = "export" Tag="EXPORT_ENERGY"/>
+		<Option Name = "generated" Tag="GENERATED_ENERGY"/>
+		<Option Name = "gas" Tag="GAS_METER"/>
+		<Option Name = "water" Tag="WATER_METER"/>
+	</energyType>
+	<struct name="Tst_CityCoordinates" >
+		 <member name="latitude" type = "double-long-unsigned" />
+		 <member name="longitude" type = "double-long-unsigned"/>
+		</struct>
+	<struct name="OBIS_t" >
+		 <member name="Obis" type = "long64-unsigned" />
+		 <member name="clas" type = "unsigned"/>
+		 <member name="attr" type = "unsigned"/>
+		</struct>
+		
+		<struct name="TstFW_ID_info" >
+		 <member name="FW_ID[8]" type = "unsigned" />
+		</struct>
+	
+	<struct name="TstModemSync_BL_Block" >
+		 <member name="Block_Number" type = "long-unsigned" />
+		 <member name="Block_Data[SIZE_OF_BL_BLOCK]" type = "unsigned"/>
+		</struct>
+		
+	<struct name="TstDISPLAY_screenParameters" >
+		 <member name="Screen_order" type = "long-unsigned" />
+		 <member name="Screen_features" type = "long-unsigned"/>
+		</struct>
+
+	<struct name="TstDISPLAY_screensFeatures" >
+		 <member name="Number_of_screens" type = "long-unsigned" />
+		 <member name="screens_array[TempVar.Number_of_screens]" type = "TstDISPLAY_screenParameters"/>
+		</struct>	
+
+	<struct name="TstDISPLAY_screensGeneralFeatures" >
+		 <member name="screens_general_features" type = "unsigned" />
+		 <member name="Time_format" type = "unsigned"/>
+		 <member name="MSG_duration" type = "unsigned" />
+		 <member name="Manual_to_Auto_duration" type = "unsigned"/>
+		 <member name="Auto_to_scrn_saver_duration" type = "long-unsigned"/>
+		 <member name="Edit_mode_timeout" type = "unsigned"/>
+		 <member name="Operator_mode_timeout" type = "unsigned" />
+		 <member name="Tariff_mode_timeout" type = "unsigned"/>
+		 <member name="After_SelfTest_mode_time" type = "unsigned" />
+		 <member name="LPM_timeout" type = "unsigned"/>
+		</struct>		
+		
+	<struct name="TstLowCredit_Threshold" >
+	  	 <member name="Money1_threshold"       type = "double-long-unsigned"/>
+		 <member name="Money2_threshold"       type = "double-long-unsigned"/>
+		 <member name="consumption1_threshold" type = "long-unsigned"/>
+		 <member name="consumption2_threshold" type = "long-unsigned"/>
+		 <member name="days1_threshold"        type = "unsigned"/>
+		 <member name="days2_threshold"        type = "unsigned"/>
+		</struct>
+		
+	<struct name="TstCreditLog" >
+	  	 <member name="LastCreditValue"       	type = "double-long"/>
+		 <member name="TotalCredits"       		type = "double-long"/>
+		 <member name="CurrentMonthCredits" 	type = "double-long"/>
+		 <member name="LastMonthCredits" 		type = "double-long"/>
+		 <member name="CreditNumber"       	 	type = "long64-unsigned"/>
+		</struct>
+		
+	<struct name="TstLoadLimit_CFG" >
+		 <member name="Num_of_close_valve[3]" type = "unsigned"/>
+		</struct>
+		
+	<struct name="TstLimiter_EmergencyProfile" >
+		<member name="Emergency_Profile_ID" type = "long-unsigned"/>
+		 <member name="Emergency_Activation_Time" type = "TstDateTime"/>
+		 <member name="Emergency_Duration" type = "double-long-unsigned"/>
+		</struct>
+		
+	<struct name="TstLoadLimit_Plan" >
+		<member name="EmergencyProfile" type = "TstLimiter_EmergencyProfile"/>
+		<member name="LoadLimit_Threshold" type = "double-long"/>
+		<member name="plane_type" type = "unsigned"/> 
+		</struct>
+		
+	<struct name="TstLoadLimit_Plans" >
+		<member name="Num_of_plans" type = "unsigned"/>
+		<member name="Load_limit_type" type = "unsigned"/>
+		<member name="Load_Limit_Plans[TempVar.Num_of_plans]" type = "TstLoadLimit_Plan"/>
+		</struct>
+		
+	<struct name="ScalerUnit_t" >
+		 <member name="Scaler" type = "integer" />
+		 <member name="Unit" type = "unsigned"/>
+		</struct>	
+	<struct name="Custome_With_param_Event_Log_Values" >
+         <member name="lp_time_stamp" type="TstDateTime"/>
+         <member name="Par1" type="unsigned"/>  
+		 <member name="Par2" type="double-long"/> 
+		 <member name="Par3" type="double-long"/> 
+         </struct>
+	<struct name="Meter_Errors_Event_Log_Values" >
+         <member name="lp_time_stamp" type="TstDateTime"/>
+         <member name="Par1" type="unsigned"/>  
+		 <member name="Par2" type="double-long-unsigned"/> 
+		 <member name="Par3" type="double-long-unsigned"/> 
+         </struct>	
+	<struct name="Custome_Event_Log_Values" >
+         <member name="lp_time_stamp" type="TstDateTime"/>
+         <member name="Par1" type="unsigned"/>    
+         </struct>
+		 
+	<struct name="Tst_SelfTestResult" > 
+		 <member name="Par2" type="double-long-unsigned"/> 
+		 <member name="Par3" type="double-long-unsigned"/> 
+		 <member name="Par4" type="double-long-unsigned"/> 		 
+         </struct>
+		 
+	<struct name="Self_Check_Event_Log_Values" >
+         <member name="lp_time_stamp" type="TstDateTime"/>
+         <member name="Par1" type="unsigned"/>  
+	 <member name="Par2" type="double-long-unsigned"/> 
+   	 <member name="Par3" type="double-long-unsigned"/> 
+	 <member name="Par4" type="double-long-unsigned"/>  
+         </struct>
+		 
+	<struct name="standard_Event_log_Values" >
+         <member name="lp_time_stamp" type="TstDateTime"/>
+         <member name="Par1" type="unsigned"/>    
+         </struct>
+
+		 
+	<struct name="Fraud_Detection_Log_Values" >
+         <member name="lp_time_stamp" type="TstDateTime"/>
+         <member name="Par1" type="unsigned"/>    
+         </struct>	 
+		 
+		 
+	<struct name="Power_Quality_Event_Log_Values" >
+         <member name="lp_time_stamp" type="TstDateTime"/>
+         <member name="Par1" type="unsigned"/>    
+         </struct>		
+
+	
+	<struct name="Finished_Power_Quality_Event_Log_Values" >
+         <member name="lp_time_stamp" type="TstDateTime"/>
+         <member name="Par1" type=" unsigned"/>   
+		 <member name="Par2[12]" type="unsigned"/> 
+         </struct>
+		 
+		 
+	<struct name="Demand_Management_Event_Log_Values" >
+         <member name="lp_time_stamp" type="TstDateTime"/>
+         <member name="Par1" type="unsigned"/>   
+         </struct>	 
+		 
+	
+	<struct name="Common_Event_Log_Values" >
+         <member name="lp_time_stamp" type="TstDateTime"/>
+         <member name="Par1" type="unsigned"/>   
+         </struct>
+		 
+		 
+		 
+	<struct name="Import_Power_Contract_Event_Log_Values" >
+         <member name="lp_time_stamp" type="TstDateTime"/>
+         <member name="Par1" type="unsigned"/> 
+		 <member name="Par2" type="double-long-unsigned"/>
+		 <member name="Par3" type="double-long-unsigned"/>
+         </struct>	 
+		 
+		 
+	<struct name="Export_Power_Contract_Event_Log_Values" >
+         <member name="lp_time_stamp" type="TstDateTime"/>
+         <member name="Par1" type="unsigned"/> 
+		 <member name="Par2" type="double-long-unsigned"/>
+		 <member name="Par3" type="double-long-unsigned"/>
+         </struct>	 
+		 
+	<struct name="Firmware_Event_Log_Values" >
+         <member name="lp_time_stamp" type="TstDateTime"/>
+         <member name="Par1" type="unsigned"/> 
+		 <member name="Par2[5]" type="unsigned"/>
+		 <member name="Par3[5]" type="unsigned"/>
+         </struct>	 
+		 
+		 
+	<struct name="Synchronization_Event_Log_Values" >
+         <member name="lp_time_stamp" type="TstDateTime"/>
+         <member name="Par1" type="unsigned"/> 
+		 <member name="Par2[12]" type="unsigned"/>
+         </struct>	 
+	
+    <struct name="Disconnect_Control_Log_Values" >
+         <member name="lp_time_stamp" type="TstDateTime"/>
+         <member name="Par1" type="unsigned"/> 
+		 <member name="Par2" type="unsigned"/>  
+		 <member name="Par3" type="unsigned"/>  
+         </struct>
+
+    <struct name="Inst_val_profile" >
+		 <member name="lp_time_stamp" type="TstDateTime"/>
+		 <member name="Par1" type="long-unsigned"/>
+		 <member name="Par2" type="long-unsigned"/>
+		 <member name="Par3" type="long-unsigned"/>
+		 <member name="Par4" type="long-unsigned"/>
+		 <member name="Par5" type="long-unsigned"/>
+		 <member name="Par6" type="long-unsigned"/>	
+		 <member name="Par7" type="long-unsigned"/>
+		 <member name="Par8" type="double-long-unsigned"/>
+		 <member name="Par9" type="double-long-unsigned"/>
+		 <member name="Par10" type="double-long-unsigned"/>
+		 <member name="Par11" type="double-long-unsigned"/>
+		 <member name="Par12" type="long-unsigned"/>			 
+		</struct>
+
+    <struct name="daily_Energy_period2" >
+		 <member name="lp_time_stamp" type="TstDateTime"/>
+		 <member name="Par1" type="unsigned"/>
+		 <member name="Par2" type="double-long-unsigned"/>
+		 <member name="Par3" type="double-long-unsigned"/>
+		 <member name="Par4" type="double-long-unsigned"/>
+		 <member name="Par5" type="double-long-unsigned"/>
+		 <member name="Par6" type="double-long-unsigned"/>	
+		 <member name="Par7" type="double-long-unsigned"/>			 
+		</struct>
+		
+		
+    <struct name="daily_Energy_period1" >
+		 <member name="lp_time_stamp" type="TstDateTime"/>
+		 <member name="Par1" type="unsigned"/>
+		 <member name="Par2" type="double-long-unsigned"/>
+		 <member name="Par3" type="double-long-unsigned"/>
+		 <member name="Par4" type="double-long-unsigned"/>
+		 <member name="Par5" type="double-long-unsigned"/>
+		 <member name="Par6" type="double-long-unsigned"/>	
+		 <member name="Par7" type="double-long-unsigned"/>			 
+		</struct>		
+	
+
+
+
+    <struct name="cur_billing_values" >
+		 <member name="lp_time_stamp" type="TstDateTime"/>
+		 <member name="Par1" type="double-long-unsigned"/>
+		 <member name="Par2" type="double-long-unsigned"/>
+		 <member name="Par3[12]" type="unsigned"/>		 
+		</struct>
+
+	
+	<struct name="Inst_Energy_Values" >
+		 <member name="lp_time_stamp" type="TstDateTime"/>
+		 <member name="Par1" type="double-long-unsigned"/>
+		 <member name="Par2" type="double-long-unsigned"/>
+		 <member name="Par3" type="double-long-unsigned"/>
+		 <member name="Par4" type="double-long-unsigned"/>
+		 <member name="Par5" type="double-long-unsigned"/>
+		 <member name="Par6" type="double-long-unsigned"/>			 
+		</struct>
+		
+	<struct name="load_profile_type1_val" >
+		 <member name="lp_time_stamp" type="TstDateTime"/>
+		 <member name="Par1" type="long-unsigned"/>
+		 <member name="Par2" type="long-unsigned"/>
+		 <member name="Par3" type="long-unsigned"/>
+		 <member name="Par4" type="long-unsigned"/>
+		 <member name="Par5" type="long-unsigned"/>
+		 <member name="Par6" type="long-unsigned"/>			 
+	</struct>
+
+	<struct name="load_profile_type2_val" >
+		 <member name="lp_time_stamp" type="TstDateTime"/>
+		 <member name="Par1" type="double-long-unsigned"/>
+		 <member name="Par2" type="double-long-unsigned"/>
+		 <member name="Par3" type="double-long-unsigned"/>
+		 <member name="Par4" type="double-long-unsigned"/>
+		 <member name="Par5" type="double-long-unsigned"/>
+		 <member name="Par6" type="double-long-unsigned"/>			 
+	</struct>
+	<struct name="Billing_Profile_val" >
+		 <member name="lp_time_stamp" type="TstDateTime"/>
+		 <member name="Par1" type="double-long-unsigned"/>
+		 <member name="Par2" type="double-long-unsigned"/>
+		 <member name="Par3" type="double-long-unsigned"/>
+		 <member name="Par4" type="double-long-unsigned"/>			 
+	</struct>
+	
+	<struct name="Inst_val_profile1_rec_t" >
+		 <member name="lp_time_stamp" type="TstDateTime"/>
+		 <member name="Par1" type="long-unsigned"/>
+		 <member name="Par2" type="long-unsigned"/>
+		 <member name="Par3" type="long-unsigned"/>
+		 <member name="Par4" type="long-unsigned"/>
+		 <member name="Par5" type="long-unsigned"/>
+		 <member name="Par6" type="long-unsigned"/>	
+		 <member name="Par7" type="long-unsigned"/>
+		 <member name="Par8" type="double-long-unsigned"/>
+		 <member name="Par9" type="double-long-unsigned"/>
+		 <member name="Par10" type="double-long-unsigned"/>
+		 <member name="Par11" type="double-long-unsigned"/>
+		 <member name="Par12" type="long-unsigned"/>			 
+		</struct>
+		
+	<struct name="Inst_Energy_val_profile1_rec_t" >
+		 <member name="lp_time_stamp" type="TstDateTime"/>
+		 <member name="Par1" type="double-long-unsigned"/>
+		 <member name="Par2" type="double-long-unsigned"/>
+		 <member name="Par3" type="double-long-unsigned"/>
+		 <member name="Par4" type="double-long-unsigned"/>
+		 <member name="Par5" type="double-long-unsigned"/>
+		 <member name="Par6" type="double-long-unsigned"/>		 
+		</struct>	
+		
+	<struct name="TstAlarm_Start_Cfg_Object_Param" >
+		 <member name="Alarm_ID" type="unsigned"/>
+		 <member name="StartAction1" type="unsigned"/>
+		</struct>
+		
+	<struct name="TstAlarm_Start_Cfg_Arr_Object_Param" >
+		 <member name="Alarm_Start_Cfg_Group[32]" type="TstAlarm_Start_Cfg_Object_Param"/>
+		</struct>	
+		
+	<struct name="TstAlarm_Stop_Cfg_Object_Param" >
+		 <member name="Alarm_ID" type="unsigned"/>
+		 <member name="StopAction" type="unsigned"/>
+		</struct>
+		
+	<struct name="TstAlarm_Stop_Cfg_Arr_Object_Param" >
+		 <member name="Alarm_Stop_Cfg_Group[32]" type="TstAlarm_Stop_Cfg_Object_Param"/>
+		</struct>
+	
+	<struct name="TstHdlc_Group_meter_ID" >
+         <member name="Meter_num" type="unsigned"/>
+		 <member name="Meter_Id_buf[30]" type="unsigned"/>
+         </struct>
+		 
+	<struct name="TstStepTariff" >
+         <member name="charge_step" type="long64-unsigned"/>
+		 <member name="recalculation_grace_warning" type="long64-unsigned"/>
+		 <member name="step_tax" type="double-long"/>
+		 <member name="recalculation_type" type="unsigned"/>
+         </struct>
+	
+	<struct name="TstStepTariffComm" >
+         <member name="charge_step1" type="double-long-unsigned"/>
+		 <member name="charge_step2" type="double-long-unsigned"/>
+		 <member name="recalculation_grace_warning1" type="double-long-unsigned"/>
+		 <member name="recalculation_grace_warning2" type="double-long-unsigned"/>
+		 <member name="step_tax" type="double-long"/>
+		 <member name="recalculation_type" type="unsigned"/>
+         </struct>
+	
+	<struct name="TstGraceCfg" >
+         <member name="recalculation_grace_consumption" type="double-long-unsigned"/>
+		 <member name="recalculation_grace_days" type="unsigned"/>
+         </struct>	 
+		 
+	<struct name="TstIndustrialTax" >
+         <member name="consumption_limit1_value" type="double-long-unsigned"/>
+		 <member name="consumption_limit1_tax" type="double-long"/>
+		 <member name="consumption_limit2_value" type="double-long-unsigned"/>
+		 <member name="consumption_limit2_tax" type="double-long"/>
+         </struct>	 
+		 
+	<struct name="TstTimeTax" >
+         <member name="daily_tax" type="double-long"/>
+		 <member name="monthly_tax" type="double-long"/>
+         </struct>	
+		 
+	<struct name="TstSpecialChargeCfgComm" >
+         <member name="tariff_type" type="unsigned"/>
+		 <member name="stStepTariff[10]" type="TstStepTariffComm"/>
+		 <member name="tax_boundary" type="double-long-unsigned"/>
+		 <member name="recalculation_boundary" type="double-long-unsigned"/>
+		 <member name="stGraceCfg" type="TstGraceCfg"/>
+		 <member name="new_tariff_recalc_enable" type="unsigned"/>
+		 <member name="zero_consumption_tax" type="double-long"/>
+		 <member name="monthly_deduction_percentage" type="unsigned"/>
+		 <member name="industrial_tax" type="TstIndustrialTax"/>
+		 <member name="time_taxes" type="TstTimeTax"/>
+		 <member name="step_tariff_tax_type" type="unsigned"/>
+		 <member name="tariff_code" type="unsigned"/>
+         </struct>	 
+	
+	<struct name="TstTime" >
+         <member name="uiHour" type="unsigned"/>
+		 <member name="uiMin" type="unsigned"/>
+		 <member name="uiSec" type="unsigned"/>
+		 <member name="uiHundredths" type="unsigned"/>
+         </struct>
+		 
+	<struct name="TstFriendlyPeriod" >
+         <member name="stStartTime" type="TstTime"/>
+		 <member name="stEndTime" type="TstTime"/>
+         </struct>
+
+	<struct name="TstTOURegister" >
+         <member name="Most_Word" type="double-long-unsigned"/>
+		 <member name="Least_Word" type="double-long-unsigned"/>
+         </struct>
+		 
+	<struct name="TstTamper_config" >
+         <member name="magnetic_release_time_out" type="long-unsigned"/>
+		 <member name="magnetic_start_time_out" type="long-unsigned"/>
+		 </struct>
+		 
+	<struct name="TstMeteringTamperconfig" >
+         <member name="miss_pot_release_time_out" type="long-unsigned"/>
+		 <member name="miss_pot_start_time_out" type="long-unsigned"/>
+		 <member name="reverse_release_time_out" type="long-unsigned"/>
+		 <member name="reverse_start_time_out" type="long-unsigned"/>
+		 <member name="phase_seq_release_time_out" type="long-unsigned"/>
+		 <member name="phase_seq_start_time_out" type="long-unsigned"/>
+		 <member name="earth_release_time_out" type="long-unsigned"/>
+		 <member name="earth_start_time_out" type="long-unsigned"/>
+		 <member name="earth_margin_prcentage" type="unsigned"/>
+		 </struct>
+		 
+	<struct name="Tst_LastTamper" >
+         <member name="dateTime" type="TstDateTime"/>
+		 <member name="Code" type="unsigned"/>
+		 </struct>	
+
+	<struct name="TstTampersConfig" >
+         <member name="magnetic_tamper" type="TstTamper_config"/>
+		 <member name="metering_tampers" type="TstMeteringTamperconfig"/>
+		 </struct>
+
+		 <struct name="ImageInfo" >
+		 <member name="ImageId[16]"  	type="unsigned"/>
+		 <member name="Size" 		 	type="double-long-unsigned"/>		 
+		 <member name="Signature"  		type="long-unsigned"/>
+		 <member name="FlashingStauts"  type="unsigned"/>
+		 <member name="Verification"  	type="unsigned"/>
+		 <member name="CreationDate" 	type="TstDateTime"/>
+		 <member name="LastEditDate" 	type="TstDateTime"/>
+		 <member name="FlashingDate" 	type="TstDateTime"/>
+		 </struct>
+		 
+	<struct name="TstRFModemConfig" >
+         <member name="system_id[4]" type="unsigned"/>
+		 <member name="RF_Channel" type="unsigned"/>
+		 <member name="RF_Power" type="unsigned"/>
+		 <member name="RF_Baudrate" type="unsigned"/>
+		 </struct>
+		 
+	<struct name="Tst_StatesStructure_comm" >
+		 <member name="Overv_levelCount[15]" type = "long-unsigned" />
+		 <member name="Underv_levelCount[15]" type = "long-unsigned"/>
+		</struct>
+	<struct name="System_Profiling_Config" >
+		 <member name="Task_ID" type="unsigned"/>
+         <member name="Task_Min_Exe_Time" type="double-long-unsigned"/>
+		 <member name="Task_Max_Exe_Time" type="double-long-unsigned"/>
+		 <member name="Num_OF_Calling" type="double-long-unsigned"/>
+		 <member name="Local_Count" type="double-long-unsigned"/>
+		 <member name="Total_Time" type="double-long-unsigned"/>
+		 <member name="Task_Avg_Time" type="double-long-unsigned"/>
+		 </struct>
+		<struct name="System_Profiling" >
+		 <member name="Tasks[MAX_NUM_OF_PROGRAM_STATES]" type="System_Profiling_Config"/>
+		 </struct>
+		 <struct name="Calbration_Factors" >
+         <member name="Qmax_factor" type="long64"/>
+		 <member name="Qmax_2TO10_factor" type="long64"/>
+		 <member name="Qmin_factor" type="long64"/>
+		 </struct>
+		 
+		 <struct name="Tst_EOB_Event_Log" >
+		 <member name="lp_time_stamp" type="TstDateTime"/>
+		  <member name="Event_code"   type="unsigned"/>    
+		 <member name="Number_OF_EOB" type="long-unsigned"/>
+		</struct>
+		 
+		
+		 <struct name="TstMoneyCredit_Threshold" >
+		 <member name="Money1_threshold" type="double-long"/>    
+		 <member name="Money2_threshold" type="double-long"/>
+		 </struct>
+		 
+		
+		 <struct name="TstCosumptionCredit_Threshold" >
+		 <member name="consumption1_threshold" type="long-unsigned"/>    
+		 <member name="consumption2_threshold" type="long-unsigned"/>
+		 </struct>
+		 
+		 
+		 <struct name="TstTimeCredit_Threshold" >
+		 <member name="time1_threshold" type="unsigned"/>    
+		 <member name="time2_threshold" type="unsigned"/>
+		 </struct>
+		
+		
+	</DataChoice>
+	<preprocessor>
+
+	
+	
+	<Included name = "Types.h"/>
+	<IncludedSTD name = "stdint.h"/>
+	</preprocessor>
+</structFile>
