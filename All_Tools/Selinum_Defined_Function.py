@@ -131,7 +131,8 @@ def Start_Operation():
 
    
     
-if __name__=="main":
+if __name__=="__main__":
+    print("Start........")
     Start_Operation()
     print("..........QUITTing.......")
     driver.quit()

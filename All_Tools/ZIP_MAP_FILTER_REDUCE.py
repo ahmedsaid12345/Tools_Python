@@ -32,21 +32,21 @@ cnopts = sftp.CnOpts()
 cnopts.hostkeys = None
 
 
-Names_OF_SITES=[#'Zordozy'
-                #,'GAMAL'
-                #,'Ebn_Elfared'
-                #,'Shaheen_Police'
-              #,'Shaheen_Elsour'
-               'Crstal'
+Names_OF_SITES=['Zordozy'
+                ,'GAMAL'
+                ,'Ebn_Elfared'
+                ,'Shaheen_Police'
+              ,'Shaheen_Elsour'
+               ,'Crstal'
                 ]
 
 
-List_of_IPS=[#'10.28.1.26'
-             #,'10.28.1.14'   
-             #,'10.28.0.174'   
-             #,'10.28.1.22'
-             #,'10.28.1.18'   
-            '10.121.34.234'
+List_of_IPS=['10.28.1.26'
+             ,'10.28.1.14'   
+             ,'10.28.0.174'   
+             ,'10.28.1.22'
+             ,'10.28.1.18'   
+            ,'10.121.34.234'
                 ]                
 
 Types_of_Network=['plc','rf1','rf2']
