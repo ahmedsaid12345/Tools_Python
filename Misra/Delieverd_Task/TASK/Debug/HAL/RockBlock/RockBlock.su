@@ -1,0 +1,3 @@
+RockBlock.c:19:6:HAL_Usart_RockBlock__Init	32	static
+RockBlock.c:43:6:HAL_Usart_RockBlock__DeInit	8	static
+RockBlock.c:57:6:HAL_ROCKBLOCK_Send_ALERT	24	static

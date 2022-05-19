@@ -8,12 +8,12 @@ import time
 
 
 #print(date_generated)
-
-List_File_Location=['C:/Users/m.ali/All_Sites/Zordozy/kpi_rf1.txt','C:/Users/m.ali/All_Sites/Zordozy/kpi_rf2.txt'
-                   ,'C:/Users/m.ali/All_Sites/GAMAL/kpi_rf1.txt','C:/Users/m.ali/All_Sites/GAMAL/kpi_rf2.txt'
-                   ,'C:/Users/m.ali/All_Sites/Crstal/kpi_rf1.txt','C:/Users/m.ali/All_Sites/Crstal/kpi_rf2.txt'
-                   ,'C:/Users/m.ali/All_Sites/Ebn_Elfared/kpi_rf1.txt'
-                   ,'C:/Users/m.ali/All_Sites/Shaheen_Police/kpi_rf1.txt','C:/Users/m.ali/All_Sites/Shaheen_Police/kpi_rf2.txt']
+Shift_day=0
+List_File_Location=['C:/Users/m.ali/All_Sites/Zordozy/kpi_rf1'+datetime.datetime.strftime(datetime.datetime.now() - datetime.timedelta(Shift_day),'%d-%m-%Y')+'.txt','C:/Users/m.ali/All_Sites/Zordozy/kpi_rf2'+datetime.datetime.strftime(datetime.datetime.now() - datetime.timedelta(Shift_day),'%d-%m-%Y')+'.txt'
+                   ,'C:/Users/m.ali/All_Sites/GAMAL/kpi_rf1'+datetime.datetime.strftime(datetime.datetime.now() - datetime.timedelta(Shift_day),'%d-%m-%Y')+'.txt','C:/Users/m.ali/All_Sites/GAMAL/kpi_rf2'+datetime.datetime.strftime(datetime.datetime.now() - datetime.timedelta(Shift_day),'%d-%m-%Y')+'.txt'
+                   ,'C:/Users/m.ali/All_Sites/Crstal/kpi_rf1'+datetime.datetime.strftime(datetime.datetime.now() - datetime.timedelta(Shift_day),'%d-%m-%Y')+'.txt','C:/Users/m.ali/All_Sites/Crstal/kpi_rf2'+datetime.datetime.strftime(datetime.datetime.now() - datetime.timedelta(Shift_day),'%d-%m-%Y')+'.txt'
+                   ,'C:/Users/m.ali/All_Sites/Ebn_Elfared/kpi_rf1'+datetime.datetime.strftime(datetime.datetime.now() - datetime.timedelta(Shift_day),'%d-%m-%Y')+'.txt'
+                   ,'C:/Users/m.ali/All_Sites/Shaheen_Police/kpi_rf1'+datetime.datetime.strftime(datetime.datetime.now() - datetime.timedelta(Shift_day),'%d-%m-%Y')+'.txt','C:/Users/m.ali/All_Sites/Shaheen_Police/kpi_rf2'+datetime.datetime.strftime(datetime.datetime.now() - datetime.timedelta(Shift_day),'%d-%m-%Y')+'.txt']
 
 Names_OF_SITES=['Zordozy_RF1','Zordozy_RF2'
                 ,'GAMAL_RF1','GAMAL_RF2'
@@ -21,7 +21,7 @@ Names_OF_SITES=['Zordozy_RF1','Zordozy_RF2'
                 ,'Ebn_Elfared_RF1'
                 ,'Shaheen_Police_RF1','Shaheen_Police_RF2']
  
-workbook = xlsxwriter.Workbook('C:/Users/m.ali/Desktop/RF_Status_29_3_2022.xlsx')
+workbook = xlsxwriter.Workbook('C:/Users/m.ali/Desktop/RF_Status_04_04_2022.xlsx')
 worksheet = workbook.add_worksheet('Sheet1')
 
 
@@ -89,6 +89,7 @@ for i_1,date_1 in enumerate(date_generated):
                 for match in re.finditer(pattern, line):
         
                     print ('Found on line %s: %s' % (i+1, match.group()))
+                        
 
                     line_1 = f.__next__()
 

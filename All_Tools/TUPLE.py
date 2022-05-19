@@ -140,25 +140,71 @@ for i in r:
 
 print(__name__) """
 
-import sys
+#import sys
 
-first_name=sys.argv[1]
-sec_name=sys.argv[2]
-print("hi")
-print(f'HI {first_name} {sec_name}')
+#first_name=sys.argv[1]
+#sec_name=sys.argv[2]
+#print("hi")
+#print(f'HI {first_name} {sec_name}')
+"""import copy
+a=5
+list_1=[12,1,3,3,4,54]
+list_2=list_1
+list_2[1]=90
+print(list_1)
+
+list_3=copy.deepcopy(list_1)
+list_3[0]=100
+
+print(list_1)
+w=90
+print(list_1.__class__)
+#print(w.__dict__)
+print(list_3)
+
+class cv:
+    x=90
+    y=80
+    def __init__(self) -> None:
+        self.x=2
+        self.y=56
+
+
+    def try_copy(self):
+        new_ins=cv()
+        #new_ins.__dict__.update(self.__dict__)
+        print(new_ins.__dict__)
+        return new_ins
 
 
 
 
+xc=cv()
+xy=xc.try_copy()
+print(xc.__dict__)
+print(xy.__dict__)
+
+xy.x=90
+
+print(xc.__dict__)
+print(xy.__dict__)
+print(xc)
+print(xy)
 
 
 
 
+"""
 
 
 
+import datetime
 
 
+x= datetime.datetime.strftime(datetime.datetime.now() - datetime.timedelta(0),'%d-%m-%y')
+print(datetime.date.today().strftime('%d-%m-%Y'))
+
+print(x)
 
 
 

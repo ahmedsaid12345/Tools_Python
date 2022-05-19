@@ -1,4 +1,5 @@
 
+
 import sys
 import re
 import datetime
@@ -7,10 +8,11 @@ import xlsxwriter
 if len(sys.argv) == 3:
     print('Only Three Arguments')
    # Path_excel='C:/Users/m.ali/Desktop/GAMAL_RF1_Status_22_3_2022_2.xlsx'
-    Path_excel='C:/Users/m.ali/Desktop/Hybrid_227_4.xlsx'
+    Path_excel='C:/Users/m.ali/Desktop/Hybrid_2271_4.xlsx'
+    Path_excel_Retry='C:/Users/m.ali/Desktop/Hybrid_2271_5.xlsx'
     path_txt='C:/Users/m.ali/Desktop/Serial_Hybrid.txt' #File Contain Serial meter
     #path_txt='C:/Users/m.ali/Desktop/Gamal_RF1_Serial.txt'
-    Kpi_File_Path='C:/Users/m.ali/All_Sites/Shaheen_Elsour/kpi_plc.txt'
+    Kpi_File_Path='C:/Users/m.ali/All_Sites/Shaheen_Elsour/kpi_plc'+ datetime.date.today().strftime('%d-%m-%Y')+'.txt'
    # Kpi_File_Path = 'C:/Users/m.ali/All_Sites/GAMAL/kpi_rf1.txt'
     
 else:
@@ -61,7 +63,7 @@ for index_1,x in enumerate(f):
         #worksheet.write(ind+1,index_1+1,'FAIL')
     for index_reow,date_1_1 in enumerate(date_generated):
         worksheet.write(index_reow+1 +offset_try,index_1+1,'FAIL')
-        pattern = re.compile(date_1_1.strftime("%Y-%m-%d")+" \S* \S*\s*\S* \SDONE\S \S* \S\d* \S*\s"+x)
+        pattern = re.compile(date_1_1.strftime("%Y-%m-%d")+" \S* \S*\s*\S* \SDONE\S \S* \S\d* \S*\s"+x.rstrip('\n'))
         print("Pattern:")
         print(pattern)
 #Count_All=0;

@@ -91,7 +91,7 @@ for FTP_HOST,site_name in zip(List_of_IPS,Names_OF_SITES):
 
 
 print('***********************************************')
-print('|                      DONE                     ')
+print('|                      DONE                    ')
 print('***********************************************')
 
 
